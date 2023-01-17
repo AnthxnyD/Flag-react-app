@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { apiURL } from "../util/api";
+import { apiURL } from "../../util/api";
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ const CountryInfo = () => {
   const { countryName } = useParams();
   console.log(countryName);
 
-  const borders = country.map((country) => country.borders);
+  // const borders = country.map((country) => country.borders);
 
   useEffect(() => {
     const getCountryByName = async () => {
