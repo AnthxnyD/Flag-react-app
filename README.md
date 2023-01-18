@@ -2,7 +2,7 @@
 <h3 align="center">A personal challenge react - Flags 🇧🇪 </h3>
 <img src="./src/util/Preview.png">
 
-<h2> [Click Here](https://flag-react-app.vercel.app/) </h2> 
+[Click Here](https://flag-react-app.vercel.app/)
 <h2> to view the project host</h2>
 
 <h3 align="left">Languages and Tools:</h3>
