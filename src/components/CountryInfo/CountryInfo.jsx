@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams , useNavigate } from "react-router-dom";
 import { apiURL } from "../../util/api";
-import { Link } from "react-router-dom";
+
 
 
 const CountryInfo = () => {
@@ -34,13 +34,15 @@ const CountryInfo = () => {
     getCountryByName();
   }, [countryName]);
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div>Hello</div>
       <div className="country__info__wrapper">
-        <Link to="/">
-          <button>Back</button>
-        </Link>
+        
+          <button onClick={() => navigate(-1)}>Back</button>
+        
 
         {isLoading && !error && <h4>Loading........</h4>}
         {error && !isLoading && <h4>{error}</h4>}
