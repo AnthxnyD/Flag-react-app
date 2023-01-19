@@ -38,9 +38,9 @@ const CountryInfo = () => {
     <>
       <div>Hello</div>
       <div className="country__info__wrapper">
-        <button>
-          <Link to="/">Back</Link>
-        </button>
+        <Link to="/">
+          <button>Back</button>
+        </Link>
 
         {isLoading && !error && <h4>Loading........</h4>}
         {error && !isLoading && <h4>{error}</h4>}
