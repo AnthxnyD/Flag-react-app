@@ -10,7 +10,7 @@ const SubmitHandler = (e) =>{
 
   return (
     <form onSubmit={SubmitHandler}>
-      <input type="text" placeholder='Search  country   . . . . . ' value={input} onChange={(e)=>setInput(e.target.value)}  />
+      <input type="text" placeholder='Search  country      . . . . . . . ' value={input} onChange={(e)=>setInput(e.target.value)}  />
 
     </form>
   )
